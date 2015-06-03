@@ -42,11 +42,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HUDFont.png">
-      <Name>HUDFont</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>FontTextureProcessor</Processor>
-    </Compile>
     <Compile Include="menu\buy_check.png">
       <Name>buy_check</Name>
       <Importer>TextureImporter</Importer>
@@ -127,13 +122,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="MenuFont.spritefont">
-      <Name>MenuFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -246,13 +234,6 @@
       <Name>silvio_portrait</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="VersNumFont.spritefont">
-      <Name>VersNumFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -456,13 +437,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DebugFont.spritefont">
-      <Name>DebugFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="comics\cs1_a.png">
       <Name>cs1_a</Name>
       <Importer>TextureImporter</Importer>
@@ -501,13 +475,6 @@
       <Name>customer_girl_portrait</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="FPSFont.spritefont">
-      <Name>FPSFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -611,13 +578,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LevelAnnounceFont.spritefont">
-      <Name>LevelAnnounceFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="backgrounds\customer_bg_a.png">
       <Name>customer_bg_a</Name>
       <Importer>TextureImporter</Importer>
@@ -706,14 +666,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StatsFont.spritefont">
-      <Name>StatsFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <SubType>Designer</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="comics\cs3_a.png">
       <Name>cs3_a</Name>
       <Importer>TextureImporter</Importer>
@@ -722,31 +674,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SubtitleFont.png">
-      <Name>SubtitleFont</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>FontTextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="subtitle_overlay.png">
       <Name>subtitle_overlay</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="QuartzHUD27.png">
-      <Name>QuartzHUD27</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>FontTextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="QuartzHUD90.png">
-      <Name>QuartzHUD90</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>FontTextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -856,13 +787,6 @@
       <Name>arrow</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="QuartzMS60.png">
-      <Name>QuartzMS60</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>FontTextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -1107,6 +1031,70 @@
       <Name>logo</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fonts\DebugFont.spritefont">
+      <Name>DebugFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\FPSFont.spritefont">
+      <Name>FPSFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\LevelAnnounceFont.spritefont">
+      <Name>LevelAnnounceFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\MenuFont.spritefont">
+      <Name>MenuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\StatsFont.spritefont">
+      <Name>StatsFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\VersNumFont.spritefont">
+      <Name>VersNumFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fonts\HUDFont.png">
+      <Name>HUDFont</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\QuartzHUD.png">
+      <Name>QuartzHUD</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\QuartzHUD27.png">
+      <Name>QuartzHUD27</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\QuartzHUD90.png">
+      <Name>QuartzHUD90</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\QuartzMS60.png">
+      <Name>QuartzMS60</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+    <Compile Include="fonts\SubtitleFont.png">
+      <Name>SubtitleFont</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

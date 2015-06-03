@@ -32,7 +32,7 @@ namespace Lets_Get_Fiscal
 
         protected override void LoadContent()
         {
-            font = Content.Load<SpriteFont>("DebugFont");
+            font = Content.Load<SpriteFont>("fonts//DebugFont");
             spriteBatch = new SpriteBatch(GraphicsDevice);
         }
 

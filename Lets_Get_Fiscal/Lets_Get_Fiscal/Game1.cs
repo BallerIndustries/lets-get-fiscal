@@ -148,15 +148,15 @@ namespace Lets_Get_Fiscal
             title_safe_rect = GetTitleSafeArea(0.8f);
             comic_safe_rect = GetTitleSafeArea(0.9f);
 
-            Fonts.HUDFont = HUDFont = Content.Load<SpriteFont>("QuartzHUD27");
-            Fonts.LevelAnnounceFont = LevelAnnounceFont = Content.Load<SpriteFont>("QuartzHUD90");
-            Fonts.SubtitleFont = Content.Load<SpriteFont>("SubtitleFont");
+            Fonts.HUDFont = HUDFont = Content.Load<SpriteFont>("fonts//QuartzHUD27");
+            Fonts.LevelAnnounceFont = LevelAnnounceFont = Content.Load<SpriteFont>("fonts//QuartzHUD90");
+            Fonts.SubtitleFont = Content.Load<SpriteFont>("fonts//SubtitleFont");
 
-            MenuFont = Content.Load<SpriteFont>("MenuFont");
-            VersNumFont = Content.Load<SpriteFont>("VersNumFont");
-            DebugFont = Content.Load<SpriteFont>("StatsFont");
+            MenuFont = Content.Load<SpriteFont>("fonts//MenuFont");
+            VersNumFont = Content.Load<SpriteFont>("fonts//VersNumFont");
+            DebugFont = Content.Load<SpriteFont>("fonts//StatsFont");
             combo_explain_texture = tm.find_texture("combo_explain");
-            Fonts.QuartzMS60 = Content.Load<SpriteFont>("QuartzMS60");
+            Fonts.QuartzMS60 = Content.Load<SpriteFont>("fonts//QuartzMS60");
 
             whiteDot = Content.Load<Texture2D>("rect");
             Singletons.credit_font = MenuFont;

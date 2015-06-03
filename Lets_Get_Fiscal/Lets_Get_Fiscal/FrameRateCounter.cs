@@ -34,7 +34,7 @@ namespace Lets_Get_Fiscal
             //if (loadAllContent)
             //{
                 spriteBatch = new SpriteBatch(GraphicsDevice);
-                spriteFont = content.Load<SpriteFont>("FPSFont");
+                spriteFont = content.Load<SpriteFont>("fonts//FPSFont");
             //}
         }
 
