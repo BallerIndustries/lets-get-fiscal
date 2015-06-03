@@ -54,7 +54,10 @@ namespace Lets_Get_Fiscal
 
         public void draw_logo()
         {
-            spriteBatch.Draw(logo, new Vector2(294, 82), Color.White);
+            Rectangle bound = new Rectangle(42, 91, 951, 682);
+            Rectangle position = new Rectangle(160, 40, 640, 459);
+
+            spriteBatch.Draw(logo, position, bound, Color.White);
             spriteBatch.Draw(whiteDot, new Rectangle(0, 0, 960, 540), Color.Black * alpha_val);
         }
 

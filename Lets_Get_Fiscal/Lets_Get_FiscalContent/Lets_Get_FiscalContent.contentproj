@@ -873,13 +873,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="logo.png">
-      <Name>logo</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="foregrounds\main_club_fg_1.png">
       <Name>main_club_fg_1</Name>
       <Importer>TextureImporter</Importer>
@@ -1105,6 +1098,13 @@
     </Compile>
     <Compile Include="menu\resume.png">
       <Name>resume</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="logo.jpg">
+      <Name>logo</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
