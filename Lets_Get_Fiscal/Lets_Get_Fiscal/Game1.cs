@@ -81,17 +81,14 @@ namespace Lets_Get_Fiscal
 
             Content.RootDirectory = "Content";
 
-            // Change of resolution.
+            //Set resolution
             graphics.PreferredBackBufferWidth = 960;
             graphics.PreferredBackBufferHeight = 540;
-            //graphics.IsFullScreen = true;
+            Window.Title = "Let's Get Fiscal - Baller Industries";
 
 #if XBOX
             Components.Add(new GamerServicesComponent(this));
-            //Guide.SimulateTrialMode = true;
 #endif
-
-            //Components.Add(new FrameRateCounter(this));
         }
 
         protected override void Initialize()
@@ -115,14 +112,7 @@ namespace Lets_Get_Fiscal
 
             logo = Content.Load<Texture2D>("logo");
 
-
             menu_base = Content.Load<Texture2D>("menu//base");
-
-            //full_menu = Content.Load<Texture2D>("full_main_menu"); 
-            //trial_menu = Content.Load<Texture2D>("trial_main_menu"); 
-            //full_pause = Content.Load<Texture2D>("full_pause_menu");
-            //trial_pause = Content.Load<Texture2D>("trial_pause_menu");
-            //check_mark = Content.Load<Texture2D>("check_mark"); 
 
             menu_buy = Content.Load<Texture2D>("menu//buy");
             menu_controls = Content.Load<Texture2D>("menu//controls");
@@ -289,8 +279,6 @@ namespace Lets_Get_Fiscal
         
         protected override void Update(GameTime gameTime)
         {
-            Window.Title = gameTime.IsRunningSlowly.ToString();
-
             if (game_state.state == GameState.State.CutScene)
             {
                 update_cutscene(gameTime);
