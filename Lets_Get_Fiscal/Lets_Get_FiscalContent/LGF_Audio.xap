@@ -221,7 +221,7 @@ Global Settings
         Xbox Format Tag = 353;
         WMA Quality = 10;
         PC Format Tag = 353;
-        WMA Quality = 60;
+        WMA Quality = 10;
     }
 }
 
@@ -234,21 +234,17 @@ Wave Bank
     Windows Bank Path Edited = 0;
     Seek Tables = 1;
     Compression Preset Name = Compression Preset;
-    Xbox Bank Last Modified Low = 0;
-    Xbox Bank Last Modified High = 0;
-    PC Bank Last Modified Low = 0;
-    PC Bank Last Modified High = 0;
     Header Last Modified Low = 0;
     Header Last Modified High = 0;
-    Bank Last Revised Low = 1512792664;
-    Bank Last Revised High = 30449206;
+    Bank Last Revised Low = 1875358857;
+    Bank Last Revised High = 30450110;
 
     Wave
     {
         Name = accountant_death;
         File = Audio\Death Noises\accountant_death.wav;
-        Build Settings Last Modified Low = 1468015230;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875258758;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -270,8 +266,8 @@ Wave Bank
     {
         Name = ben_seib_death;
         File = Audio\Death Noises\ben_seib_death.wav;
-        Build Settings Last Modified Low = 1468085300;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875258758;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -293,8 +289,8 @@ Wave Bank
     {
         Name = butabi_death;
         File = Audio\Death Noises\butabi_death.wav;
-        Build Settings Last Modified Low = 1468165371;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875258758;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -316,8 +312,8 @@ Wave Bank
     {
         Name = coral_death;
         File = Audio\Death Noises\coral_death.wav;
-        Build Settings Last Modified Low = 1468235435;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875258758;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -339,8 +335,8 @@ Wave Bank
     {
         Name = fitty_cent_death;
         File = Audio\Death Noises\fitty_cent_death.wav;
-        Build Settings Last Modified Low = 1468305506;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875258758;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -362,8 +358,8 @@ Wave Bank
     {
         Name = guido_death;
         File = Audio\Death Noises\guido_death.wav;
-        Build Settings Last Modified Low = 1468375570;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875258758;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -385,8 +381,8 @@ Wave Bank
     {
         Name = nicole_death;
         File = Audio\Death Noises\nicole_death.wav;
-        Build Settings Last Modified Low = 1468435633;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875258758;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -408,8 +404,8 @@ Wave Bank
     {
         Name = silvio_death;
         File = Audio\Death Noises\silvio_death.wav;
-        Build Settings Last Modified Low = 1468515707;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875258758;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -431,8 +427,8 @@ Wave Bank
     {
         Name = boss_music;
         File = Audio\Music\boss_music.wav;
-        Build Settings Last Modified Low = 1468555752;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875268771;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -454,8 +450,8 @@ Wave Bank
     {
         Name = credits_song;
         File = Audio\Music\credits_song.wav;
-        Build Settings Last Modified Low = 1468585772;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875268771;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -477,8 +473,8 @@ Wave Bank
     {
         Name = main_club_music;
         File = Audio\Music\main_club_music.wav;
-        Build Settings Last Modified Low = 1468625813;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875268771;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -500,8 +496,8 @@ Wave Bank
     {
         Name = vip_music;
         File = Audio\Music\vip_music.wav;
-        Build Settings Last Modified Low = 1468655845;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875268771;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -523,8 +519,8 @@ Wave Bank
     {
         Name = alright;
         File = Audio\Scene 1\SFX\alright.wav;
-        Build Settings Last Modified Low = 1468765951;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875268771;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -546,8 +542,8 @@ Wave Bank
     {
         Name = beep;
         File = Audio\Scene 1\SFX\beep.wav;
-        Build Settings Last Modified Low = 1468876062;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875268771;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -569,8 +565,8 @@ Wave Bank
     {
         Name = brush_teeth;
         File = Audio\Scene 1\SFX\brush_teeth.wav;
-        Build Settings Last Modified Low = 1468996172;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875268771;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -592,8 +588,8 @@ Wave Bank
     {
         Name = clock_hit;
         File = Audio\Scene 1\SFX\clock_hit.wav;
-        Build Settings Last Modified Low = 1469046220;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875278780;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -615,8 +611,8 @@ Wave Bank
     {
         Name = definition;
         File = Audio\Scene 1\SFX\definition.wav;
-        Build Settings Last Modified Low = 1469176342;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875278780;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -638,8 +634,8 @@ Wave Bank
     {
         Name = door_hit;
         File = Audio\Scene 1\SFX\door_hit.wav;
-        Build Settings Last Modified Low = 1469226387;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875278780;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -661,8 +657,8 @@ Wave Bank
     {
         Name = go_down;
         File = Audio\Scene 1\SFX\go_down.wav;
-        Build Settings Last Modified Low = 1469386541;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875278780;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -684,8 +680,8 @@ Wave Bank
     {
         Name = growl;
         File = Audio\Scene 1\SFX\growl.wav;
-        Build Settings Last Modified Low = 1469446601;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875278780;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -707,8 +703,8 @@ Wave Bank
     {
         Name = help_lad;
         File = Audio\Scene 1\SFX\help_lad.wav;
-        Build Settings Last Modified Low = 1469566717;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875278780;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -730,8 +726,8 @@ Wave Bank
     {
         Name = introduction;
         File = Audio\Scene 1\SFX\introduction.wav;
-        Build Settings Last Modified Low = 1469696847;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875278780;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -753,8 +749,8 @@ Wave Bank
     {
         Name = laundry_get;
         File = Audio\Scene 1\SFX\laundry_get.wav;
-        Build Settings Last Modified Low = 1469816963;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875278780;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -776,8 +772,8 @@ Wave Bank
     {
         Name = probably_duck;
         File = Audio\Scene 1\SFX\probably_duck.wav;
-        Build Settings Last Modified Low = 1469927065;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -799,8 +795,8 @@ Wave Bank
     {
         Name = stelven_get_in;
         File = Audio\Scene 1\SFX\stelven_get_in.wav;
-        Build Settings Last Modified Low = 1470027159;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -822,8 +818,8 @@ Wave Bank
     {
         Name = ten_years;
         File = Audio\Scene 1\SFX\ten_years.wav;
-        Build Settings Last Modified Low = 1470147448;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -845,8 +841,8 @@ Wave Bank
     {
         Name = traffic_noise_a;
         File = Audio\Scene 1\SFX\traffic_noise_a.wav;
-        Build Settings Last Modified Low = 1470247421;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -868,8 +864,8 @@ Wave Bank
     {
         Name = traffic_noise_b;
         File = Audio\Scene 1\SFX\traffic_noise_b.wav;
-        Build Settings Last Modified Low = 1470347518;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -891,8 +887,8 @@ Wave Bank
     {
         Name = traffic_noise_c;
         File = Audio\Scene 1\SFX\traffic_noise_c.wav;
-        Build Settings Last Modified Low = 1470447611;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -914,8 +910,8 @@ Wave Bank
     {
         Name = traffic_noise_d;
         File = Audio\Scene 1\SFX\traffic_noise_d.wav;
-        Build Settings Last Modified Low = 1470547707;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -937,8 +933,8 @@ Wave Bank
     {
         Name = walking_noise;
         File = Audio\Scene 1\SFX\walking_noise.wav;
-        Build Settings Last Modified Low = 1470697806;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -960,8 +956,8 @@ Wave Bank
     {
         Name = announce;
         File = Audio\Scene 1\Voice\announce.wav;
-        Build Settings Last Modified Low = 1470858008;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875288790;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -983,8 +979,8 @@ Wave Bank
     {
         Name = go_down 2;
         File = Audio\Scene 1\Voice\go_down.wav;
-        Build Settings Last Modified Low = 1471128213;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875298800;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1006,8 +1002,8 @@ Wave Bank
     {
         Name = organic;
         File = Audio\Scene 1\Voice\organic.wav;
-        Build Settings Last Modified Low = 1471278411;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875298800;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1029,8 +1025,8 @@ Wave Bank
     {
         Name = stelven_get_in 2;
         File = Audio\Scene 1\Voice\stelven_get_in.wav;
-        Build Settings Last Modified Low = 1471378508;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875298800;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1052,8 +1048,8 @@ Wave Bank
     {
         Name = ten_years 2;
         File = Audio\Scene 1\Voice\ten_years.wav;
-        Build Settings Last Modified Low = 1471498620;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875298800;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1075,8 +1071,8 @@ Wave Bank
     {
         Name = what_is;
         File = Audio\Scene 1\Voice\what_is.wav;
-        Build Settings Last Modified Low = 1471598716;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875298800;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1098,8 +1094,8 @@ Wave Bank
     {
         Name = cs1;
         File = Audio\Scene 1\cs1.wav;
-        Build Settings Last Modified Low = 1471628745;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875298800;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1121,8 +1117,8 @@ Wave Bank
     {
         Name = cs2;
         File = Audio\Scene 2\cs2.wav;
-        Build Settings Last Modified Low = 1471668786;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875298800;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1144,8 +1140,8 @@ Wave Bank
     {
         Name = cutscene2;
         File = Audio\Scene 2\cutscene2.wav;
-        Build Settings Last Modified Low = 1471698764;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875298800;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1167,8 +1163,8 @@ Wave Bank
     {
         Name = cutscene2_a;
         File = Audio\Scene 2\cutscene2_a.wav;
-        Build Settings Last Modified Low = 1471748866;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875308809;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1190,8 +1186,8 @@ Wave Bank
     {
         Name = cutscene2_b;
         File = Audio\Scene 2\cutscene2_b.wav;
-        Build Settings Last Modified Low = 1471778841;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875308809;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1213,8 +1209,8 @@ Wave Bank
     {
         Name = cutscene2_c;
         File = Audio\Scene 2\cutscene2_c.wav;
-        Build Settings Last Modified Low = 1471818879;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875308809;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1236,8 +1232,8 @@ Wave Bank
     {
         Name = cutscene2_d;
         File = Audio\Scene 2\cutscene2_d.wav;
-        Build Settings Last Modified Low = 1471848905;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875308809;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1259,8 +1255,8 @@ Wave Bank
     {
         Name = cutscene2_e;
         File = Audio\Scene 2\cutscene2_e.wav;
-        Build Settings Last Modified Low = 1471888944;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875308809;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1282,8 +1278,8 @@ Wave Bank
     {
         Name = cutscene2_f;
         File = Audio\Scene 2\cutscene2_f.wav;
-        Build Settings Last Modified Low = 1471918978;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875308809;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1305,8 +1301,8 @@ Wave Bank
     {
         Name = cutscene2_g;
         File = Audio\Scene 2\cutscene2_g.wav;
-        Build Settings Last Modified Low = 1471959014;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875308809;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1328,8 +1324,8 @@ Wave Bank
     {
         Name = cutscene2_h;
         File = Audio\Scene 2\cutscene2_h.wav;
-        Build Settings Last Modified Low = 1471999052;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875308809;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1351,8 +1347,8 @@ Wave Bank
     {
         Name = cutscene2_i;
         File = Audio\Scene 2\cutscene2_i.wav;
-        Build Settings Last Modified Low = 1472029075;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875318819;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1374,8 +1370,8 @@ Wave Bank
     {
         Name = cutscene2_j;
         File = Audio\Scene 2\cutscene2_j.wav;
-        Build Settings Last Modified Low = 1472079129;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875318819;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1397,8 +1393,8 @@ Wave Bank
     {
         Name = cutscene2_j1;
         File = Audio\Scene 2\cutscene2_j1.wav;
-        Build Settings Last Modified Low = 1472119168;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875318819;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1420,8 +1416,8 @@ Wave Bank
     {
         Name = cutscene2_j2;
         File = Audio\Scene 2\cutscene2_j2.wav;
-        Build Settings Last Modified Low = 1472149100;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875318819;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1443,8 +1439,8 @@ Wave Bank
     {
         Name = cutscene2_k;
         File = Audio\Scene 2\cutscene2_k.wav;
-        Build Settings Last Modified Low = 1472189135;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875318819;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1466,8 +1462,8 @@ Wave Bank
     {
         Name = cs3;
         File = Audio\Scene 3\cs3.wav;
-        Build Settings Last Modified Low = 1472219167;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875318819;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1489,8 +1485,8 @@ Wave Bank
     {
         Name = act1;
         File = Audio\SFX\act1.wav;
-        Build Settings Last Modified Low = 1472259200;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875318819;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1512,8 +1508,8 @@ Wave Bank
     {
         Name = argh;
         File = Audio\SFX\argh.wav;
-        Build Settings Last Modified Low = 1472329273;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875318819;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1535,8 +1531,8 @@ Wave Bank
     {
         Name = bang;
         File = Audio\SFX\bang.wav;
-        Build Settings Last Modified Low = 1472369308;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1558,8 +1554,8 @@ Wave Bank
     {
         Name = charging_face;
         File = Audio\SFX\charging_face.wav;
-        Build Settings Last Modified Low = 1472419356;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1581,8 +1577,8 @@ Wave Bank
     {
         Name = dash;
         File = Audio\SFX\dash.wav;
-        Build Settings Last Modified Low = 1472489424;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1604,8 +1600,8 @@ Wave Bank
     {
         Name = dj_charge;
         File = Audio\SFX\dj_charge.wav;
-        Build Settings Last Modified Low = 1472529462;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1627,8 +1623,8 @@ Wave Bank
     {
         Name = do;
         File = Audio\SFX\do.wav;
-        Build Settings Last Modified Low = 1472599532;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1650,8 +1646,8 @@ Wave Bank
     {
         Name = fer;
         File = Audio\SFX\fer.wav;
-        Build Settings Last Modified Low = 1472639568;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1673,8 +1669,8 @@ Wave Bank
     {
         Name = fernando_teleport;
         File = Audio\SFX\fernando_teleport.wav;
-        Build Settings Last Modified Low = 1472709635;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1696,8 +1692,8 @@ Wave Bank
     {
         Name = forza;
         File = Audio\SFX\forza.wav;
-        Build Settings Last Modified Low = 1472769693;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1719,8 +1715,8 @@ Wave Bank
     {
         Name = get_out;
         File = Audio\SFX\get_out.wav;
-        Build Settings Last Modified Low = 1472839760;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875328828;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1742,8 +1738,8 @@ Wave Bank
     {
         Name = go_noise;
         File = Audio\SFX\go_noise.wav;
-        Build Settings Last Modified Low = 1472889808;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875338838;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1765,8 +1761,8 @@ Wave Bank
     {
         Name = ground_smash;
         File = Audio\SFX\ground_smash.wav;
-        Build Settings Last Modified Low = 1472939859;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875338838;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1788,8 +1784,8 @@ Wave Bank
     {
         Name = guido_throw;
         File = Audio\SFX\guido_throw.wav;
-        Build Settings Last Modified Low = 1472989904;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875338838;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1811,8 +1807,8 @@ Wave Bank
     {
         Name = hiya;
         File = Audio\SFX\hiya.wav;
-        Build Settings Last Modified Low = 1473059974;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875338838;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1834,8 +1830,8 @@ Wave Bank
     {
         Name = land_noise;
         File = Audio\SFX\land_noise.wav;
-        Build Settings Last Modified Low = 1473100013;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875338838;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1857,8 +1853,8 @@ Wave Bank
     {
         Name = menu_beep;
         File = Audio\SFX\menu_beep.wav;
-        Build Settings Last Modified Low = 1473140051;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875338838;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1880,8 +1876,8 @@ Wave Bank
     {
         Name = menu_music;
         File = Audio\SFX\menu_music.wav;
-        Build Settings Last Modified Low = 1473180090;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875338838;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1903,8 +1899,8 @@ Wave Bank
     {
         Name = missed;
         File = Audio\SFX\missed.wav;
-        Build Settings Last Modified Low = 1473220134;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875338838;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1926,8 +1922,8 @@ Wave Bank
     {
         Name = nan;
         File = Audio\SFX\nan.wav;
-        Build Settings Last Modified Low = 1473270182;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875348964;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1949,8 +1945,8 @@ Wave Bank
     {
         Name = pah;
         File = Audio\SFX\pah.wav;
-        Build Settings Last Modified Low = 1473300211;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875348964;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1972,8 +1968,8 @@ Wave Bank
     {
         Name = pew;
         File = Audio\SFX\pew.wav;
-        Build Settings Last Modified Low = 1473350259;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875348964;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -1995,8 +1991,8 @@ Wave Bank
     {
         Name = psh;
         File = Audio\SFX\psh.wav;
-        Build Settings Last Modified Low = 1473390291;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875348964;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -2018,8 +2014,8 @@ Wave Bank
     {
         Name = stage_clear;
         File = Audio\SFX\stage_clear.wav;
-        Build Settings Last Modified Low = 1473420329;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875348964;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -2041,8 +2037,8 @@ Wave Bank
     {
         Name = suicide_warning;
         File = Audio\SFX\suicide_warning.wav;
-        Build Settings Last Modified Low = 1473540441;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875348964;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -2064,8 +2060,8 @@ Wave Bank
     {
         Name = throw_noise;
         File = Audio\SFX\throw_noise.wav;
-        Build Settings Last Modified Low = 1473600499;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875348964;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -2087,8 +2083,8 @@ Wave Bank
     {
         Name = thump;
         File = Audio\SFX\thump.wav;
-        Build Settings Last Modified Low = 1473650553;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875358857;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
@@ -2110,8 +2106,8 @@ Wave Bank
     {
         Name = turbo_charge;
         File = Audio\SFX\turbo_charge.wav;
-        Build Settings Last Modified Low = 1473710610;
-        Build Settings Last Modified High = 30449206;
+        Build Settings Last Modified Low = 1875358857;
+        Build Settings Last Modified High = 30450110;
 
         Cache
         {
