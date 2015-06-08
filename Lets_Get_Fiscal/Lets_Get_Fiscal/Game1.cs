@@ -22,7 +22,7 @@ namespace Lets_Get_Fiscal
         MenuData main_menu_data, in_game_menu_data;
         GameState game_state;
 
-        Microsoft.Xna.Framework.Audio.Cue music;
+        Microsoft.Xna.Framework.Audio.Cue menuMusic;
 
         Ego ego;
         List<BadGuy> bad_guys;
@@ -133,7 +133,7 @@ namespace Lets_Get_Fiscal
             flourishes = new List<Flourish>(5);
 
 
-            music = soundBank.GetCue("menu_music");
+            menuMusic = soundBank.GetCue("menu_music");
             
             camera = new Camera(new Rectangle(0, 0, 960 * 2, 540), new Rectangle(0, 0, 960, 540));  //Reinit
             pm = new ProjectileManager(camera, all_gameobjects);                                                     

@@ -24,15 +24,15 @@ namespace Lets_Get_Fiscal
             kbState = Keyboard.GetState();
             gpState = GamePad.GetState(controlling_player);
 
-            if (music.IsPaused)
-            {
-                music.Resume();
-            }
-            else if (music.IsPlaying == false)
-            {
-                music = soundBank.GetCue(music.Name);
-                music.Play();
-            }
+            //if (menuMusic.IsPaused)
+            //{
+            //    menuMusic.Resume();
+            //}
+            //else if (menuMusic.IsPlaying == false)
+            //{
+            //    menuMusic = soundBank.GetCue(menuMusic.Name);
+            //    menuMusic.Play();
+            //}
 
             if (down_once())
                 in_game_menu_data.selected_index = (int)MathHelper.Clamp(in_game_menu_data.selected_index + 1, 0, 3);
@@ -42,7 +42,7 @@ namespace Lets_Get_Fiscal
 
             if (pressed_once(Keys.Enter) || pressed_once(Buttons.A))
             {
-                music.Pause();
+                //menuMusic.Pause();
 
                 switch (in_game_menu_data.selected_index)
                 {
@@ -81,15 +81,15 @@ namespace Lets_Get_Fiscal
             kbState = Keyboard.GetState();
             gpState = GamePad.GetState(controlling_player);
 
-            if (music.IsPaused)
-            {
-                music.Resume();
-            }
-            else if (music.IsPlaying == false)
-            {
-                music = soundBank.GetCue(music.Name);
-                music.Play();
-            }
+            //if (menuMusic.IsPaused)
+            //{
+            //    menuMusic.Resume();
+            //}
+            //else if (menuMusic.IsPlaying == false)
+            //{
+            //    menuMusic = soundBank.GetCue(menuMusic.Name);
+            //    menuMusic.Play();
+            //}
 
             if (down_once())
                 in_game_menu_data.selected_index = (int)MathHelper.Clamp(in_game_menu_data.selected_index + 1, 0, 2);
@@ -97,9 +97,15 @@ namespace Lets_Get_Fiscal
             if (up_once())
                 in_game_menu_data.selected_index = (int)MathHelper.Clamp(in_game_menu_data.selected_index - 1, 0, 2);
 
+            if (pressed_once(Keys.Escape))
+            {
+                game_state.state = GameState.State.GamePlay;
+                game_state.current_act.music.Resume();
+            }
+
             if (pressed_once(Keys.Enter) || pressed_once(Buttons.A))
             {
-                music.Pause();
+                //menuMusic.Pause();
 
                 switch (in_game_menu_data.selected_index)
                 {
@@ -132,15 +138,15 @@ namespace Lets_Get_Fiscal
             gpState = GamePad.GetState(controlling_player);
 
 
-            if (music.IsPaused)
-            {
-                music.Resume();
-            }
-            else if (music.IsPlaying == false)
-            {
-                music = soundBank.GetCue(music.Name);
-                music.Play();
-            }
+            //if (menuMusic.IsPaused)
+            //{
+            //    menuMusic.Resume();
+            //}
+            //else if (menuMusic.IsPlaying == false)
+            //{
+            //    menuMusic = soundBank.GetCue(menuMusic.Name);
+            //    menuMusic.Play();
+            //}
 
             if (down_once())
                 main_menu_data.selected_index = (int)MathHelper.Clamp(main_menu_data.selected_index + 1, 0, 2);
@@ -150,7 +156,7 @@ namespace Lets_Get_Fiscal
 
             if (pressed_once(Keys.Enter) || pressed_once(Buttons.A))
             {
-                music.Pause();
+                //menuMusic.Pause();
 
                 switch (main_menu_data.selected_index)
                 {
@@ -180,15 +186,15 @@ namespace Lets_Get_Fiscal
             kbState = Keyboard.GetState();
             gpState = GamePad.GetState(controlling_player);
 
-            if (music.IsPaused)
-            {
-                music.Resume();
-            }
-            else if (music.IsPlaying == false)
-            {
-                music = soundBank.GetCue(music.Name);
-                music.Play();
-            }
+            //if (menuMusic.IsPaused)
+            //{
+            //    menuMusic.Resume();
+            //}
+            //else if (menuMusic.IsPlaying == false)
+            //{
+            //    menuMusic = soundBank.GetCue(menuMusic.Name);
+            //    menuMusic.Play();
+            //}
 
             if (down_once())
                 main_menu_data.selected_index = (int)MathHelper.Clamp(main_menu_data.selected_index + 1, 0, 3);
@@ -198,7 +204,7 @@ namespace Lets_Get_Fiscal
 
             if (pressed_once(Keys.Enter) || pressed_once(Buttons.A))
             {
-                music.Pause();
+                //menuMusic.Pause();
 
                 switch (main_menu_data.selected_index)
                 {
