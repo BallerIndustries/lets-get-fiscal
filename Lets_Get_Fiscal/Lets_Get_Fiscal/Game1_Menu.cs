@@ -15,6 +15,10 @@ namespace Lets_Get_Fiscal
 {
     public partial class Game1 : Microsoft.Xna.Framework.Game
     {
+        Texture2D menu_base;
+        Texture2D menu_buy, menu_controls, menu_exit, menu_new, menu_resume;
+        Texture2D buy_check, controls_check, exit_check, new_check, resume_check;
+
         public void update_trial_pause(GameTime gameTime)
         {
             kbState = Keyboard.GetState();
@@ -49,12 +53,6 @@ namespace Lets_Get_Fiscal
 
                         //Singletons.music_category.Resume();
                         break;
-
-                    //New Game
-                    //case 1:
-                    //    game_state.state = GameState.State.GamePlay;
-                    //    initialise_objects();
-                    //    break;
 
                     //Controls
                     case 1:
@@ -109,26 +107,12 @@ namespace Lets_Get_Fiscal
                     case 0:
                         game_state.state = GameState.State.GamePlay;
                         game_state.current_act.music.Resume();
-                    
-                        //Singletons.music_category.Resume();
                         break;
-
-                    //New Game
-                    //case 1:
-                    //    game_state.state = GameState.State.GamePlay;
-                    //    initialise_objects();
-                    //    break;
 
                     //Controls
                     case 1:
                         game_state.state = GameState.State.Controls;
                         break;
-
-                    //Buy Game
-                    //case 2:
-                    //    if (controlling_player.can_buy_game())
-                    //        Guide.ShowMarketplace(controlling_player);
-                    //    break;
 
                     //Quit
                     case 2:
@@ -180,12 +164,6 @@ namespace Lets_Get_Fiscal
                         game_state.state = GameState.State.Controls;
                         break;
 
-                    //Buy Game
-                    //case 2:
-                    //    if (controlling_player.can_buy_game())
-                    //        Guide.ShowMarketplace(controlling_player);
-                    //    break;
-
                     //Exit
                     case 2:
                         this.Exit();
@@ -201,7 +179,6 @@ namespace Lets_Get_Fiscal
         {
             kbState = Keyboard.GetState();
             gpState = GamePad.GetState(controlling_player);
-
 
             if (music.IsPaused)
             {
@@ -318,46 +295,7 @@ namespace Lets_Get_Fiscal
                 case 2:
                     spriteBatch.Draw(exit_check, check_pos3, Color.White);
                     break;
-
-                case 3:
-                    //spriteBatch.Draw(new_check, check_pos4, Color.White);
-                    break;
             }
-
-
-//            int y_pos = 100;
-
-//            for (int i = 0; i < main_menu_data.num_options; i++)
-//            {
-//                string text = main_menu_data.menu_text[i];
-
-//#if XBOX
-//                if (text == "Buy Game" && Guide.IsTrialMode == false)
-//                    main_menu_data.visible[i] = false;
-//#else
-//                if (text == "Buy Game")
-//                    main_menu_data.visible[i] = false;
-//#endif
-
-//                if (main_menu_data.visible[i] == false)
-//                    continue;
-
-//                if (i == main_menu_data.selected_index)
-//                    spriteBatch.DrawString(MenuFont, main_menu_data.menu_text[i], new Vector2(100, y_pos), Color.Yellow);
-//                else
-//                    spriteBatch.DrawString(MenuFont, main_menu_data.menu_text[i], new Vector2(100, y_pos), Color.White);
-
-//                y_pos += 100;
-//            }
-
-//            string vers_text = "August 25th 2011 Build";
-//            int x = 960 - (int)VersNumFont.MeasureString(vers_text).X - 50;
-//            int y = 540 - (int)VersNumFont.MeasureString(vers_text).Y - 20; 
-//            spriteBatch.DrawString(VersNumFont, vers_text, new Vector2(x, y), Color.White);
-
-//#if WINDOWS
-//            spriteBatch.DrawString(VersNumFont, "ballerindustries.blogspot.com", Vector2.Zero, Color.White);
-//#endif
         }
 
         public void draw_trial_pause()
@@ -415,34 +353,7 @@ namespace Lets_Get_Fiscal
                 case 3:
                     spriteBatch.Draw(exit_check, check_pos4, Color.White);
                     break;
-
             }
-
-
-//            int y_pos = 100;
-
-//            for (int i = 0; i < in_game_menu_data.num_options; i++)
-//            {
-//                string text = in_game_menu_data.menu_text[i];
-
-//#if XBOX
-//                if (text == "Buy Game" && Guide.IsTrialMode == false)
-//                    in_game_menu_data.visible[i] = false;
-//#else
-//                if (text == "Buy Game")
-//                    in_game_menu_data.visible[i] = false;
-//#endif
-
-//                if (in_game_menu_data.visible[i] == false)
-//                    continue;
-
-//                if (i == in_game_menu_data.selected_index)
-//                    spriteBatch.DrawString(MenuFont, in_game_menu_data.menu_text[i], new Vector2(100, y_pos), Color.Yellow);
-//                else
-//                    spriteBatch.DrawString(MenuFont, in_game_menu_data.menu_text[i], new Vector2(100, y_pos), Color.White);
-
-//                y_pos += 100;
-//            }
         }
     }
 }

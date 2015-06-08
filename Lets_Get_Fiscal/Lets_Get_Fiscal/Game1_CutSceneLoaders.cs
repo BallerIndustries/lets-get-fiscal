@@ -198,7 +198,7 @@ namespace Lets_Get_Fiscal
             //cs.add_transitions();
             cs.comic_num = 0;
 #if XBOX
-            if (Guide.IsTrialMode)
+            if (Singletons.IsTrialMode)
             {
                 cs.return_state = GameState.State.DemoOver;
                 change_level(bifo, bifo_customer);

@@ -36,7 +36,7 @@ namespace Lets_Get_Fiscal
 
         private static int shake_count;
         public static Texture2D subtitle_overlay;
-
+    
 
         public Singletons(TextureManager tm, CollisionManager cm, ProjectileManager pm, Camera camera, Random random, SoundBank soundBank, GameState game_state, MoveManager mm, AudioEngine audioEngine, MusicManager music_manager, Ego ego)
         {
@@ -50,18 +50,27 @@ namespace Lets_Get_Fiscal
             Singletons.soundBank = soundBank;
             Singletons.game_state = game_state;
             Singletons.mm = mm;
-
             Singletons.music_category = audioEngine.GetCategory("Music");
             Singletons.music_category.SetVolume(music_volume);
-
             Singletons.subtitle_overlay = tm.find_texture("subtitle_overlay");
+        }
+
+        public static bool IsTrialMode
+        {
+            get
+            {
+#if XBOX
+                return Guide.IsTrialMode
+#else
+                return false;
+#endif          
+            }
         }
 
         public static void PlayMusic()
         {
             Singletons.game_state.current_act.music = Singletons.soundBank.GetCue(Singletons.game_state.current_act.music.Name);
             Singletons.game_state.current_act.music.Play();
-            //Singletons.music_manager.fade_in();
         }
 
         public static void StopMusic()
@@ -98,9 +107,5 @@ namespace Lets_Get_Fiscal
                 }
             }
         }
-
-
-
-
     }
 }

@@ -69,9 +69,7 @@ namespace Lets_Get_Fiscal
         Texture2D combo_explain_texture;
 
         //Texture2D full_menu, trial_menu, full_pause, trial_pause;
-        Texture2D menu_base;
-        Texture2D menu_buy, menu_controls, menu_exit, menu_new, menu_resume;
-        Texture2D buy_check, controls_check, exit_check, new_check, resume_check;
+       
         
         //Texture2D check_mark;
 
@@ -301,14 +299,14 @@ namespace Lets_Get_Fiscal
             }
             else if (game_state.state == GameState.State.Menu)
             {
-                if (Guide.IsTrialMode)
+                if (Singletons.IsTrialMode)
                     update_trial_menu(gameTime);
                 else
                     update_full_menu(gameTime);
             }
             else if (game_state.state == GameState.State.InGameMenu)
             {
-                if (Guide.IsTrialMode)
+                if (Singletons.IsTrialMode)
                     update_trial_pause(gameTime);
                 else
                     update_full_pause(gameTime);
@@ -812,7 +810,7 @@ namespace Lets_Get_Fiscal
             }
             else if (game_state.state == GameState.State.Menu)
             {
-                if (Guide.IsTrialMode)
+                if (Singletons.IsTrialMode)
                     draw_trial_menu();
                 else
                     draw_full_menu();
@@ -821,7 +819,7 @@ namespace Lets_Get_Fiscal
             }
             else if (game_state.state == GameState.State.InGameMenu)
             {
-                if (Guide.IsTrialMode)
+                if (Singletons.IsTrialMode)
                     draw_trial_pause();
                 else
                     draw_full_pause();
@@ -1054,30 +1052,30 @@ namespace Lets_Get_Fiscal
 
             //WAVE 1
             wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-500, 500)));
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-600, 540)));
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-700, 500)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-600, 540)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-700, 500)));
 
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(1200, 500)));
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1300, 540)));
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1400, 500)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(1200, 500)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1300, 540)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1400, 500)));
 
-            ////WAVE 2
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(3500, 500), 2400));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.coral, new Point(3600, 540), 2400));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(3700, 500), 2400));
+            //WAVE 2
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(3500, 500), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.coral, new Point(3600, 540), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(3700, 500), 2400));
 
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.coral, new Point(1300, 500), 2400));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(1200, 540), 2400));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(1100, 500), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.coral, new Point(1300, 500), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(1200, 540), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(1100, 500), 2400));
 
-            ////WAVE 3
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5100, 500), 4000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.fitty_cent, new Point(5200, 540), 4000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5300, 500), 4000));
+            //WAVE 3
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5100, 500), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.fitty_cent, new Point(5200, 540), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5300, 500), 4000));
 
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(2900, 500), 4000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.fitty_cent, new Point(2800, 540), 4000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.butabi, new Point(2700, 500), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(2900, 500), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.fitty_cent, new Point(2800, 540), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.butabi, new Point(2700, 500), 4000));
 
             ////////////////////////////////////////////////////
             // KITCHEN AREA
@@ -1088,30 +1086,30 @@ namespace Lets_Get_Fiscal
 
             //WAVE 1
             wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-500, 500)));
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-600, 540)));
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-700, 500)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-600, 540)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-700, 500)));
 
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(1200, 500)));
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1300, 540)));
-            //wave1.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1400, 500)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(1200, 500)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1300, 540)));
+            wave1.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1400, 500)));
 
-            ////WAVE 2
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(3500, 500), 2400));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.coral, new Point(3600, 540), 2400));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(3700, 500), 2400));
+            //WAVE 2
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(3500, 500), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.coral, new Point(3600, 540), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(3700, 500), 2400));
 
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.coral, new Point(1300, 500), 2400));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(1200, 540), 2400));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(1100, 500), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.coral, new Point(1300, 500), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(1200, 540), 2400));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(1100, 500), 2400));
 
-            ////WAVE 3
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5100, 500), 4000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.fitty_cent, new Point(5200, 540), 4000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5300, 500), 4000));
+            //WAVE 3
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5100, 500), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.fitty_cent, new Point(5200, 540), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5300, 500), 4000));
 
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(2900, 500), 4000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.fitty_cent, new Point(2800, 540), 4000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.butabi, new Point(2700, 500), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(2900, 500), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.fitty_cent, new Point(2800, 540), 4000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.butabi, new Point(2700, 500), 4000));
 
             ////////////////////////////////////////////////////
             // FREEZER
@@ -1173,33 +1171,33 @@ namespace Lets_Get_Fiscal
             wave1.bad_guys.Add(new WaveElement(WaveElement.Type.running_treeboi, new Point(500, 500)));
 
             //Wave 2
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-500, 450), 0));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-600, 450), 0));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(1500, 450), 0));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-500, 450), 0));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-600, 450), 0));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(1500, 450), 0));
 
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-100, 450), 1000));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(2100, 450), 1000));
-            //wave2.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(2200, 450), 1000));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(-100, 450), 1000));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(2100, 450), 1000));
+            wave2.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(2200, 450), 1000));
 
-            ////Wave 3
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(4100, 450), 3000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(4300, 450), 3000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(4500, 450), 3000));
+            //Wave 3
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(4100, 450), 3000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(4300, 450), 3000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(4500, 450), 3000));
 
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(1900, 450), 3000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1700, 450), 3000));
-            //wave3.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1500, 450), 3000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(1900, 450), 3000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1700, 450), 3000));
+            wave3.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(1500, 450), 3000));
 
-            //////Wave 4
-            //wave4.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5300, 450), 4200));
-            //wave4.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(5500, 450), 4200));
-            //wave4.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5700, 450), 4200));
-            //wave4.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(3100, 450), 4200));
-            //wave4.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(2900, 450), 4200));
-            //wave4.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(2700, 450), 4200));
+            ////Wave 4
+            wave4.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5300, 450), 4200));
+            wave4.bad_guys.Add(new WaveElement(WaveElement.Type.silvio, new Point(5500, 450), 4200));
+            wave4.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(5700, 450), 4200));
+            wave4.bad_guys.Add(new WaveElement(WaveElement.Type.nicole, new Point(3100, 450), 4200));
+            wave4.bad_guys.Add(new WaveElement(WaveElement.Type.ben_seib, new Point(2900, 450), 4200));
+            wave4.bad_guys.Add(new WaveElement(WaveElement.Type.guido_strong, new Point(2700, 450), 4200));
 
             ////Wave 5
-            //wave5.bad_guys.Add(new WaveElement(WaveElement.Type.butabi, new Point(5000, 450)));
+            wave5.bad_guys.Add(new WaveElement(WaveElement.Type.butabi, new Point(5000, 450)));
 
             wave1 = vip.waves[0] = new Wave(0, 1200);
             wave2 = vip.waves[1] = new Wave(1, 2400);

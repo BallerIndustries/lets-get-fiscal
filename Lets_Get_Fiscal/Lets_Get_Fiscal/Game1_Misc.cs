@@ -102,7 +102,7 @@ namespace Lets_Get_Fiscal
             kbState = Keyboard.GetState();
             gpState = GamePad.GetState(controlling_player);
 
-            if (Guide.IsTrialMode == false)
+            if (!Singletons.IsTrialMode)
             {
                 game_state.state = GameState.State.LevelAnnounce;
             }
