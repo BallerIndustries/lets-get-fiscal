@@ -15,12 +15,12 @@ namespace Lets_Get_Fiscal
             CutScene,
             ActOver,
             StartPrompt,
-            Controls,
+            //Controls,
             LevelAnnounce,
             GameOver,
             DemoOver,
             LanguageWarning,
-            ComboExplain,
+            //ComboExplain,
             Logo
         }
 

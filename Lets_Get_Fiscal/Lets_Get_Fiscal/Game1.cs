@@ -66,7 +66,6 @@ namespace Lets_Get_Fiscal
         Rectangle title_safe_rect, ego_pos_rect, comic_safe_rect;
         MoveManager mm;
         PlayerIndex controlling_player;
-        Texture2D combo_explain_texture;
 
         //Texture2D full_menu, trial_menu, full_pause, trial_pause;
        
@@ -153,7 +152,7 @@ namespace Lets_Get_Fiscal
             MenuFont = Content.Load<SpriteFont>("fonts//MenuFont");
             VersNumFont = Content.Load<SpriteFont>("fonts//VersNumFont");
             DebugFont = Content.Load<SpriteFont>("fonts//StatsFont");
-            combo_explain_texture = tm.find_texture("combo_explain");
+            //combo_explain_texture = tm.find_texture("combo_explain");
             Fonts.QuartzMS60 = Content.Load<SpriteFont>("fonts//QuartzMS60");
 
             whiteDot = Content.Load<Texture2D>("rect");
@@ -289,10 +288,10 @@ namespace Lets_Get_Fiscal
             {
                 update_logo();
             }
-            else if (game_state.state == GameState.State.ComboExplain)
-            {
-                update_combo_explain();
-            }
+            //else if (game_state.state == GameState.State.ComboExplain)
+            //{
+            //    update_combo_explain();
+            //}
             else if (game_state.state == GameState.State.DemoOver)
             {
                 update_demo_over();
@@ -324,10 +323,10 @@ namespace Lets_Get_Fiscal
             {
                 update_start_prompt();
             }
-            else if (game_state.state == GameState.State.Controls)
-            {
-                update_controls();
-            }
+            //else if (game_state.state == GameState.State.Controls)
+            //{
+            //    update_controls();
+            //}
             else if (game_state.state == GameState.State.LevelAnnounce)
             {
                 update_level_announce();
@@ -338,31 +337,31 @@ namespace Lets_Get_Fiscal
             base.Update(gameTime);
         }
 
-        public void update_controls()
-        {
-            gpState = GamePad.GetState(controlling_player);
-            kbState = Keyboard.GetState();
+        //public void update_controls()
+        //{
+        //    gpState = GamePad.GetState(controlling_player);
+        //    kbState = Keyboard.GetState();
 
-            if (kbState.IsKeyDown(Keys.Escape) && prevkbState.IsKeyUp(Keys.Escape))
-            {
-                //Go to previous state ACTUALLY
-                game_state.state = game_state.prev_state;
-            }
+        //    if (kbState.IsKeyDown(Keys.Escape) && prevkbState.IsKeyUp(Keys.Escape))
+        //    {
+        //        //Go to previous state ACTUALLY
+        //        game_state.state = game_state.prev_state;
+        //    }
 
-            if (gpState.IsButtonDown(Buttons.B) && prevgpState.IsButtonUp(Buttons.B))
-            {
-                //Go to previous state ACTUALLY
-                game_state.state = game_state.prev_state;
-            }
+        //    if (gpState.IsButtonDown(Buttons.B) && prevgpState.IsButtonUp(Buttons.B))
+        //    {
+        //        //Go to previous state ACTUALLY
+        //        game_state.state = game_state.prev_state;
+        //    }
 
-            prevgpState = gpState;
-            prevkbState = kbState;
-        }
+        //    prevgpState = gpState;
+        //    prevkbState = kbState;
+        //}
 
-        public void draw_controls()
-        {
-            spriteBatch.Draw(Content.Load<Texture2D>("controls"), Vector2.Zero, Color.White);
-        }
+        //public void draw_controls()
+        //{
+        //    spriteBatch.Draw(Content.Load<Texture2D>("controls"), Vector2.Zero, Color.White);
+        //}
 
         public void update_start_prompt()
         {
@@ -792,10 +791,10 @@ namespace Lets_Get_Fiscal
             {
                 draw_logo();
             }
-            else if (game_state.state == GameState.State.ComboExplain)
-            {
-                draw_combo_explain();
-            }
+            //else if (game_state.state == GameState.State.ComboExplain)
+            //{
+            //    draw_combo_explain();
+            //}
             else if (game_state.state == GameState.State.DemoOver)
             {
                 draw_demo_over();
@@ -830,10 +829,10 @@ namespace Lets_Get_Fiscal
             {
                 draw_start_prompt();
             }
-            else if (game_state.state == GameState.State.Controls)
-            {
-                draw_controls();
-            }
+            //else if (game_state.state == GameState.State.Controls)
+            //{
+            //    draw_controls();
+            //}
             else if (game_state.state == GameState.State.LevelAnnounce)
             {
                 draw_level_announce();

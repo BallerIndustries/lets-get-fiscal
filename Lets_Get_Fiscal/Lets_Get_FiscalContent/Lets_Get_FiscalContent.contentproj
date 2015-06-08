@@ -411,22 +411,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controls.png">
-      <Name>controls</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="spritesheets\fitty_cent.png">
       <Name>fitty_cent</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="props.png">
-      <Name>props</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -771,13 +757,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="combo_explain.png">
-      <Name>combo_explain</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="arrow.png">
       <Name>arrow</Name>
       <Importer>TextureImporter</Importer>
@@ -1000,6 +979,7 @@
       <Name>logo</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
     </Compile>
   </ItemGroup>
   <ItemGroup>

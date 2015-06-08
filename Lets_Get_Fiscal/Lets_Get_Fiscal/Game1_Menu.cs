@@ -55,9 +55,9 @@ namespace Lets_Get_Fiscal
                         break;
 
                     //Controls
-                    case 1:
-                        game_state.state = GameState.State.Controls;
-                        break;
+                    //case 1:
+                    //    game_state.state = GameState.State.Controls;
+                    //    break;
 
                     //Buy Game
                     case 2:
@@ -81,21 +81,11 @@ namespace Lets_Get_Fiscal
             kbState = Keyboard.GetState();
             gpState = GamePad.GetState(controlling_player);
 
-            //if (menuMusic.IsPaused)
-            //{
-            //    menuMusic.Resume();
-            //}
-            //else if (menuMusic.IsPlaying == false)
-            //{
-            //    menuMusic = soundBank.GetCue(menuMusic.Name);
-            //    menuMusic.Play();
-            //}
-
             if (down_once())
-                in_game_menu_data.selected_index = (int)MathHelper.Clamp(in_game_menu_data.selected_index + 1, 0, 2);
+                in_game_menu_data.selected_index = (int)MathHelper.Clamp(in_game_menu_data.selected_index + 1, 0, 1);
 
             if (up_once())
-                in_game_menu_data.selected_index = (int)MathHelper.Clamp(in_game_menu_data.selected_index - 1, 0, 2);
+                in_game_menu_data.selected_index = (int)MathHelper.Clamp(in_game_menu_data.selected_index - 1, 0, 1);
 
             if (pressed_once(Keys.Escape))
             {
@@ -105,8 +95,6 @@ namespace Lets_Get_Fiscal
 
             if (pressed_once(Keys.Enter) || pressed_once(Buttons.A))
             {
-                //menuMusic.Pause();
-
                 switch (in_game_menu_data.selected_index)
                 {
                     //Resume
@@ -115,13 +103,8 @@ namespace Lets_Get_Fiscal
                         game_state.current_act.music.Resume();
                         break;
 
-                    //Controls
-                    case 1:
-                        game_state.state = GameState.State.Controls;
-                        break;
-
                     //Quit
-                    case 2:
+                    case 1:
                         this.Exit();
                         break;
                 }
@@ -137,22 +120,11 @@ namespace Lets_Get_Fiscal
             kbState = Keyboard.GetState();
             gpState = GamePad.GetState(controlling_player);
 
-
-            //if (menuMusic.IsPaused)
-            //{
-            //    menuMusic.Resume();
-            //}
-            //else if (menuMusic.IsPlaying == false)
-            //{
-            //    menuMusic = soundBank.GetCue(menuMusic.Name);
-            //    menuMusic.Play();
-            //}
-
             if (down_once())
-                main_menu_data.selected_index = (int)MathHelper.Clamp(main_menu_data.selected_index + 1, 0, 2);
+                main_menu_data.selected_index = (int)MathHelper.Clamp(main_menu_data.selected_index + 1, 0, 1);
 
             if (up_once())
-                main_menu_data.selected_index = (int)MathHelper.Clamp(main_menu_data.selected_index - 1, 0, 2);//main_menu_data.move_up();
+                main_menu_data.selected_index = (int)MathHelper.Clamp(main_menu_data.selected_index - 1, 0, 1);//main_menu_data.move_up();
 
             if (pressed_once(Keys.Enter) || pressed_once(Buttons.A))
             {
@@ -165,13 +137,8 @@ namespace Lets_Get_Fiscal
                         initialise_cutscene(scene1);
                         break;
 
-                    //Controls
-                    case 1:
-                        game_state.state = GameState.State.Controls;
-                        break;
-
                     //Exit
-                    case 2:
+                    case 1:
                         this.Exit();
                         break;
                 }
@@ -185,16 +152,6 @@ namespace Lets_Get_Fiscal
         {
             kbState = Keyboard.GetState();
             gpState = GamePad.GetState(controlling_player);
-
-            //if (menuMusic.IsPaused)
-            //{
-            //    menuMusic.Resume();
-            //}
-            //else if (menuMusic.IsPlaying == false)
-            //{
-            //    menuMusic = soundBank.GetCue(menuMusic.Name);
-            //    menuMusic.Play();
-            //}
 
             if (down_once())
                 main_menu_data.selected_index = (int)MathHelper.Clamp(main_menu_data.selected_index + 1, 0, 3);
@@ -211,11 +168,6 @@ namespace Lets_Get_Fiscal
                     //New Game
                     case 0:
                         initialise_cutscene(scene1);
-                        break;
-
-                    //Controls
-                    case 1:
-                        game_state.state = GameState.State.Controls;
                         break;
 
                     //Buy Game
@@ -285,8 +237,7 @@ namespace Lets_Get_Fiscal
             spriteBatch.Draw(menu_base, Vector2.Zero, Color.White);
 
             spriteBatch.Draw(menu_new, pos1, Color.White);
-            spriteBatch.Draw(menu_controls, pos2, Color.White);
-            spriteBatch.Draw(menu_exit, pos3, Color.White);
+            spriteBatch.Draw(menu_exit, pos2, Color.White);
 
             switch (main_menu_data.selected_index)
             {
@@ -295,11 +246,7 @@ namespace Lets_Get_Fiscal
                     break;
 
                 case 1:
-                    spriteBatch.Draw(controls_check, check_pos2, Color.White);
-                    break;
-
-                case 2:
-                    spriteBatch.Draw(exit_check, check_pos3, Color.White);
+                    spriteBatch.Draw(exit_check, check_pos2, Color.White);
                     break;
             }
         }
@@ -339,8 +286,7 @@ namespace Lets_Get_Fiscal
             spriteBatch.Draw(menu_base, Vector2.Zero, Color.White);
 
             spriteBatch.Draw(menu_resume, pos1, Color.White);
-            spriteBatch.Draw(menu_controls, pos2, Color.White);
-            spriteBatch.Draw(menu_exit, pos3, Color.White);
+            spriteBatch.Draw(menu_exit, pos2, Color.White);
 
             switch (in_game_menu_data.selected_index)
             {
@@ -349,15 +295,7 @@ namespace Lets_Get_Fiscal
                     break;
 
                 case 1:
-                    spriteBatch.Draw(controls_check, check_pos2, Color.White);
-                    break;
-
-                case 2:
-                    spriteBatch.Draw(exit_check, check_pos3, Color.White);
-                    break;
-
-                case 3:
-                    spriteBatch.Draw(exit_check, check_pos4, Color.White);
+                    spriteBatch.Draw(exit_check, check_pos2, Color.White);
                     break;
             }
         }

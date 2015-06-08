@@ -25,7 +25,7 @@ namespace Lets_Get_Fiscal
 
             blake_wilkie = new CutScene(GameState.State.Menu, Load_BlakeWilkie, tm);
             nedroid_chinese = new CutScene(GameState.State.Menu, Load_NedroidChinese, tm);
-            scene1 = new CutScene(GameState.State.ComboExplain, Load_Scene1_Rudy, tm);
+            scene1 = new CutScene(GameState.State.GamePlay, Load_Scene1_Rudy, tm);
             scene2 = new CutScene(GameState.State.GamePlay, Load_Scene2, tm);
             scene3 = new CutScene(GameState.State.LevelAnnounce, Load_Scene3, tm);
 

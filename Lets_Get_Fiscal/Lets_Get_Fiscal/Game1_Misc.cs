@@ -61,24 +61,24 @@ namespace Lets_Get_Fiscal
             spriteBatch.Draw(whiteDot, new Rectangle(0, 0, 960, 540), Color.Black * alpha_val);
         }
 
-        public void update_combo_explain()
-        {
-            gpState = GamePad.GetState(controlling_player);
-            kbState = Keyboard.GetState();
+        //public void update_combo_explain()
+        //{
+        //    gpState = GamePad.GetState(controlling_player);
+        //    kbState = Keyboard.GetState();
 
-            if (pressed_once(Buttons.A) || pressed_once(Keys.Space))
-            {
-                game_state.state = GameState.State.LevelAnnounce;
-            }
+        //    if (pressed_once(Buttons.A) || pressed_once(Keys.Space))
+        //    {
+        //        game_state.state = GameState.State.LevelAnnounce;
+        //    }
 
-            prevgpState = gpState;
-            prevkbState = kbState;
-        }
+        //    prevgpState = gpState;
+        //    prevkbState = kbState;
+        //}
 
-        public void draw_combo_explain()
-        {
-            spriteBatch.Draw(combo_explain_texture, Vector2.Zero, Color.White);
-        }
+        //public void draw_combo_explain()
+        //{
+        //    spriteBatch.Draw(combo_explain_texture, Vector2.Zero, Color.White);
+        //}
 
         public void update_language_warning()
         {
