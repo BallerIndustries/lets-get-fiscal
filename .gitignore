@@ -6,3 +6,7 @@ Lets_Get_Fiscal/Lets_Get_FiscalContent/obj/
 *.cachefile
 .DS_Store
 .idea
+
+bin
+obj
+.vscode
